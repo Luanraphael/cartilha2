@@ -430,15 +430,15 @@ export default function ShopeePage() {
 
             {/* Celular no meio da lista: pausa visual entre os dois blocos de itens. */}
             <CheckList items={INCLUDES.slice(0, 7)} className="mt-10" />
-            {/* O braço sai pelo canto direito da imagem, então ela encosta na borda da tela. */}
-            <div className="relative left-1/2 my-10 w-screen -translate-x-1/2">
+            {/* Fundo preto da imagem vira faixa de ponta a ponta; encostada à direita, a manga sai pela borda da tela. */}
+            <div className="sp-dark-band relative left-1/2 my-10 w-screen -translate-x-1/2">
               <Image
                 src={`${IMG}/${PHONE_MOCKUP.img}`}
                 alt="Mão segurando um celular com notificações de vendas realizadas na Shopee"
                 width={PHONE_MOCKUP.w}
                 height={PHONE_MOCKUP.h}
-                sizes="(min-width: 700px) 640px, 92vw"
-                className="sp-edge-mockup ml-auto w-[92%]"
+                sizes="(min-width: 760px) 760px, 100vw"
+                className="sp-band-mockup ml-auto w-full"
               />
             </div>
             <CheckList items={INCLUDES.slice(7)} />

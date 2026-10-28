@@ -254,11 +254,12 @@ img {
 
 /* ---------- Botão ---------- */
 
-/* Mockup que encosta na borda direita: a manga some suave na base, sem corte reto. */
-.sp-edge-mockup {
-  max-width: 640px;
-  -webkit-mask-image: linear-gradient(180deg, #000 88%, transparent 100%);
-  mask-image: linear-gradient(180deg, #000 88%, transparent 100%);
+/* Faixa preta de ponta a ponta para o mockup de fundo preto. */
+.sp-dark-band {
+  background: #000;
+}
+.sp-band-mockup {
+  max-width: 760px;
 }
 
 /* Âncora de preço do hero: direto sobre o laranja, sem caixa. */
