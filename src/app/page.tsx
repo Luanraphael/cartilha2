@@ -413,9 +413,10 @@ export default function ShopeePage() {
             </div>
 
             <p className="mt-8 text-lg font-medium leading-relaxed text-white/95 sm:text-xl">
-              Conheça a <SoftMark>Cartilha Prática</SoftMark>, um passo a passo visual e organizado, com{" "}
-              <strong className="font-extrabold">telas da Shopee ilustradas</strong>, exemplos e cálculos que mostram{" "}
-              <SoftMark>o que fazer em cada etapa</SoftMark>, da criação da sua loja até a sua primeira venda.
+              Você terá em mãos todo o <SoftMark>passo a passo completo</SoftMark>, desde a criação da sua conta até a
+              publicação dos anúncios, <strong className="font-extrabold">estratégias usadas pelos top vendedores</strong>,
+              lista dos produtos mais vendidos atualizada toda semana, catálogo de fornecedores, dicas de embalagem e envio
+              e <SoftMark>5 bônus exclusivos</SoftMark> para acelerar ainda mais as suas vendas!
             </p>
 
             <CheckList items={HERO_BULLETS} onRed className="mt-8 w-full text-left" />
@@ -430,12 +431,8 @@ export default function ShopeePage() {
         <LightSection>
           <Container>
             <h2 className={`${display} text-center text-3xl font-black leading-[1.1] tracking-tight sp-title--dark sm:text-4xl md:text-5xl`}>
-              Veja tudo o que você vai aprender para <Mark on="light">começar a vender na Shopee!</Mark>
+              Veja tudo o que você terá em mãos para <Mark on="light">começar a vender na Shopee</Mark>
             </h2>
-            <p className="mt-6 text-center text-lg font-medium leading-relaxed text-sp-ink-soft">
-              Aprenda o passo a passo, desde a criação da sua loja até a preparação dos seus primeiros anúncios, vendas
-              e envios, mesmo que você esteja começando do absoluto zero.
-            </p>
 
             {/* Celular no meio da lista: pausa visual entre os dois blocos de itens. */}
             <CheckList items={INCLUDES.slice(0, 7)} className="mt-10" />
