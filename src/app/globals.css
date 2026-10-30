@@ -205,7 +205,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin: 0;
+  /* respiro abaixo da headline (aqui, porque um margin no CSS venceria o mt-* do Tailwind) */
+  margin: 56px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -246,18 +247,8 @@ img {
   padding: 18px 18px 20px;
   box-shadow: 6px 6px 0 var(--sp-ink);
 }
-.sp-step-icon {
-  display: inline-flex;
-  height: 40px;
-  width: 40px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: var(--sp-cream);
-  color: var(--sp-600);
-}
 .sp-step-text {
-  margin: 12px 0 0;
+  margin: 0;
   color: var(--sp-ink-soft);
   font-size: 1.125rem;
   font-weight: 500;
@@ -275,16 +266,12 @@ img {
 .sp-step--goal .sp-step-card {
   background: var(--sp-500);
 }
-.sp-step--goal .sp-step-icon {
-  background: var(--sp-white);
-  color: var(--sp-500);
-}
 .sp-step--goal .sp-step-text,
 .sp-step--goal .sp-step-text strong {
   color: var(--sp-white);
 }
 @media (min-width: 640px) {
-  .sp-steps { --st-num: 64px; gap: 32px; }
+  .sp-steps { --st-num: 64px; gap: 32px; margin-top: 72px; }
   .sp-step { gap: 20px; }
   .sp-step-num { font-size: 2.125rem; border-radius: 16px; }
   .sp-step-card { padding: 22px 26px 24px; }

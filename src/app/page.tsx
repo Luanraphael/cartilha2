@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import ShowcaseSlider from "./showcase-slider";
-import { BookOpenCheck, Check, ChevronsDown, Gift, Minus, Plus, Send, ShieldCheck, TrendingUp, X } from "lucide-react";
+import { Check, ChevronsDown, Gift, Minus, Plus, ShieldCheck, X } from "lucide-react";
 
 const IMG = "/assets";
 const CHECKOUT_PREMIUM = "https://pay.cakto.com.br/4gwnhop_1252585";
@@ -629,13 +629,10 @@ export default function ShopeePage() {
               </span>
             </SectionTitle>
 
-            <ol className="sp-steps mt-12">
+            <ol className="sp-steps">
               <li className="sp-step">
                 <span className={`${display} sp-step-num`}>1</span>
                 <div className="sp-step-card">
-                  <span className="sp-step-icon">
-                    <Send className="h-5 w-5" strokeWidth={2.5} />
-                  </span>
                   <p className="sp-step-text">
                     Você recebe o link da Pasta dos Materiais em PDF <strong>diretamente no seu E-mail e Whatsapp</strong>
                   </p>
@@ -644,9 +641,6 @@ export default function ShopeePage() {
               <li className="sp-step">
                 <span className={`${display} sp-step-num`}>2</span>
                 <div className="sp-step-card">
-                  <span className="sp-step-icon">
-                    <BookOpenCheck className="h-5 w-5" strokeWidth={2.5} />
-                  </span>
                   <p className="sp-step-text">
                     Segue à risca todo o nosso Passo a passo dentro da Cartilha tendo acesso às{" "}
                     <strong>Estratégias usadas pelos Top vendedores</strong> e{" "}
@@ -657,9 +651,6 @@ export default function ShopeePage() {
               <li className="sp-step sp-step--goal">
                 <span className={`${display} sp-step-num`}>3</span>
                 <div className="sp-step-card">
-                  <span className="sp-step-icon">
-                    <TrendingUp className="h-5 w-5" strokeWidth={2.5} />
-                  </span>
                   <p className="sp-step-text">
                     Para de pular de galho em galho, faz as suas <strong>primeiras vendas</strong> e começa a se
                     consolidar no Maior mercado varejista do Brasil com{" "}
