@@ -4,8 +4,8 @@ import ShowcaseSlider from "./showcase-slider";
 import { Check, ChevronsDown, Gift, Minus, Plus, ShieldCheck, X } from "lucide-react";
 
 const IMG = "/assets";
-const CHECKOUT_PREMIUM = "https://pay.cakto.com.br/4gwnhop_1252585";
-const CHECKOUT_BASIC = "https://pay.cakto.com.br/dmfa9gr_1252563";
+const CHECKOUT_PREMIUM = "https://payfast.greenn.com.br/jyzas98/offer/qE2zs8?ch_id=144861";
+const CHECKOUT_BASIC = "https://payfast.greenn.com.br/f5f6n8q/offer/Gw5n2H?ch_id=144862";
 const display = "font-display";
 
 /* ------------------------------------------------------------------ */
@@ -672,7 +672,7 @@ export default function ShopeePage() {
               tier="PACOTE PREMIUM"
               items={PREMIUM_ITEMS}
               oldPrice="DE R$ 97,00"
-              price="27,00"
+              price="37,00"
               href={CHECKOUT_PREMIUM}
               className="mt-14"
             />
@@ -738,7 +738,7 @@ export default function ShopeePage() {
             </div>
 
             <div className="mt-12 flex justify-center">
-              <CtaButton href="#offer" className="sm:min-w-[320px]">
+              <CtaButton href={CHECKOUT_PREMIUM} className="sm:min-w-[320px]">
                 Comprar agora
               </CtaButton>
             </div>
