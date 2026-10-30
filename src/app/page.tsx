@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import ShowcaseSlider from "./showcase-slider";
+import TodayLabel from "./today-label";
 import { Check, ChevronsDown, Gift, Minus, Plus, ShieldCheck, X } from "lucide-react";
 
 const IMG = "/assets";
@@ -527,7 +528,9 @@ export default function ShopeePage() {
           <Container className="mt-10 sm:mt-12">
             <div className="clay-red-card flex flex-col items-center gap-6 rounded-[48px] px-6 py-10 text-center">
               <h2 className={`${display} text-3xl font-black leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl`}>
-                GARANTINDO <Mark on="orange">HOJE DIA 30 DE OUTUBRO</Mark> VOCÊ TAMBÉM RECEBE:
+                GARANTINDO <Mark on="orange">
+                  <TodayLabel />
+                </Mark> VOCÊ TAMBÉM RECEBE:
               </h2>
               <IconOrb tone="white">
                 <ChevronsDown className="h-8 w-8" strokeWidth={3} />
