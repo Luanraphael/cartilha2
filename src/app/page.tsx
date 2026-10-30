@@ -61,7 +61,8 @@ const SHOWCASE = [
 // Prints reais de conversas com alunos (celular com fundo transparente), mostrados nos slides "Depoimentos".
 const TESTIMONIALS = [
   { title: "aluno com 3 vendas em um único dia", img: "depoimento-01.png" },
-  { title: "primeira venda de uma aluna", img: "depoimento-02.png" },
+  { title: "aluno com 5 vendas que trouxe a esposa para vender junto", img: "depoimento-06.png" },
+  { title: "primeira venda de uma aluna", img: "depoimento-07.png" },
   { title: "aluna comemorando as vendas", img: "depoimento-03.png" },
   { title: "aluna mostrando as notificações de venda", img: "depoimento-04.png" },
   { title: "aluna contando a sua primeira venda", img: "depoimento-05.png" },
