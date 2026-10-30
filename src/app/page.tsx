@@ -5,8 +5,8 @@ import TodayLabel from "./today-label";
 import { Check, ChevronsDown, Gift, Minus, Plus, ShieldCheck, X } from "lucide-react";
 
 const IMG = "/assets";
-const CHECKOUT_PREMIUM = "https://payfast.greenn.com.br/jyzas98/offer/qE2zs8?ch_id=144861";
-const CHECKOUT_BASIC = "https://payfast.greenn.com.br/f5f6n8q/offer/Gw5n2H?ch_id=144862";
+const CHECKOUT_PREMIUM = "https://pay.cakto.com.br/jyamu9n";
+const CHECKOUT_BASIC = "https://pay.cakto.com.br/dmfa9gr_1252563";
 const display = "font-display";
 
 /* ------------------------------------------------------------------ */
@@ -460,31 +460,6 @@ export default function ShopeePage() {
           </Container>
         </LightSection>
 
-        {/* 3b · Depoimentos */}
-        <LightSection className="pt-0">
-          <Container>
-            <h2 className={`${display} sp-proof-title text-center sp-title--dark`}>
-              Eles já deram o primeiro passo e começaram a fazer suas{" "}
-              <Mark on="light">primeiras vendas na Shopee</Mark>
-            </h2>
-            <p className="mt-6 text-center text-lg font-medium leading-relaxed text-sp-ink-soft">
-              Mensagens reais de quem seguiu a Cartilha Prática passo a passo e viu as primeiras notificações de venda
-              chegarem no celular.
-            </p>
-            <p className="mt-3 text-center text-lg font-bold text-sp-ink-soft">Arraste para o lado →</p>
-          </Container>
-          <div className="mx-auto mt-8 w-full max-w-[600px] px-1.5 sm:px-10">
-            <ShowcaseSlider
-              slides={TESTIMONIALS}
-              imgBase={IMG}
-              altPrefix="Depoimento"
-              width={1086}
-              height={1448}
-              framed={false}
-            />
-          </div>
-        </LightSection>
-
         {/* 4 · Slides + O que vem + 5 · Data + 6 · Bônus */}
         <ShopeeSlab id="inside" variant="inside">
           {/* Bloco branco dos 3 carrosséis; a onda laranja fica presa no fim dele. */}
@@ -612,7 +587,7 @@ export default function ShopeePage() {
           </Container>
         </ShopeeSlab>
 
-        {/* 9 · Como funciona + Oferta */}
+        {/* 9 · Como funciona + Depoimentos + Oferta */}
         <LightSection id="offer" className="scroll-mt-20">
           <Container>
             <SectionTitle>
@@ -652,8 +627,33 @@ export default function ShopeePage() {
                 </div>
               </li>
             </ol>
+          </Container>
 
-            <SectionTitle className="mt-20">TEMOS ALGO ESPECIAL PARA VOCÊ</SectionTitle>
+          {/* Depoimentos */}
+          <Container className="mt-20">
+            <h2 className={`${display} sp-proof-title text-center sp-title--dark`}>
+              Eles já deram o primeiro passo e começaram a fazer suas{" "}
+              <Mark on="light">primeiras vendas na Shopee</Mark>
+            </h2>
+            <p className="mt-6 text-center text-lg font-medium leading-relaxed text-sp-ink-soft">
+              Mensagens reais de quem seguiu a Cartilha Prática passo a passo e viu as primeiras notificações de venda
+              chegarem no celular.
+            </p>
+            <p className="mt-3 text-center text-lg font-bold text-sp-ink-soft">Arraste para o lado →</p>
+          </Container>
+          <div className="mx-auto mt-8 w-full max-w-[600px] px-1.5 sm:px-10">
+            <ShowcaseSlider
+              slides={TESTIMONIALS}
+              imgBase={IMG}
+              altPrefix="Depoimento"
+              width={1086}
+              height={1448}
+              framed={false}
+            />
+          </div>
+
+          <Container className="mt-20">
+            <SectionTitle>TEMOS ALGO ESPECIAL PARA VOCÊ</SectionTitle>
             <div className="mt-8 flex justify-center">
               <IconOrb>
                 <ChevronsDown className="h-8 w-8" strokeWidth={3} />
