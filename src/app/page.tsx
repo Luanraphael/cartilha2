@@ -17,7 +17,7 @@ const MAIN_PRODUCT_FULL = "Cartilha Prática: Como Vender na Shopee, do Zero à 
 const MAIN_MOCKUP = { img: "mockup-cartilha-shopee.png", w: 1306, h: 1205 };
 const PHONE_MOCKUP = { img: "mockup-smartphone-notificacoes.png", w: 1306, h: 1205 };
 
-const HERO_BULLETS = ["Acesso vitalício", "Envio imediato por e-mail e WhatsApp", "Garantia de 7 dias"];
+const HERO_BULLETS = ["Acesso vitalício", "Envio imediato por e-mail e WhatsApp", "Material em PDF (Pronto para Impressão)"];
 
 const INCLUDES = [
   "Prepare tudo o que precisa para começar a vender na Shopee, entendendo como a plataforma funciona, como os clientes compram e quais são seus primeiros passos.",
@@ -186,16 +186,6 @@ const FAQ: { q: string; a: ReactNode }[] = [
       <>
         Não. A cartilha explica <strong>quando faz sentido começar com CPF</strong>, quando o CNPJ passa a valer a pena
         e o que muda em cada caso, para você escolher com segurança.
-      </>
-    ),
-  },
-  {
-    q: "A cartilha garante que eu vou vender?",
-    a: (
-      <>
-        Nenhum material pode garantir vendas, porque o resultado depende da sua aplicação. O que a cartilha entrega é{" "}
-        <strong>um caminho claro e organizado</strong>, com tudo o que você precisa fazer em cada etapa para chegar
-        preparado à sua primeira venda.
       </>
     ),
   },
@@ -537,7 +527,7 @@ export default function ShopeePage() {
           <Container className="mt-10 sm:mt-12">
             <div className="clay-red-card flex flex-col items-center gap-6 rounded-[48px] px-6 py-10 text-center">
               <h2 className={`${display} text-3xl font-black leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl`}>
-                GARANTINDO <Mark on="orange">HOJE</Mark> VOCÊ TAMBÉM RECEBE
+                GARANTINDO <Mark on="orange">HOJE DIA 30 DE OUTUBRO</Mark> VOCÊ TAMBÉM RECEBE:
               </h2>
               <IconOrb tone="white">
                 <ChevronsDown className="h-8 w-8" strokeWidth={3} />
