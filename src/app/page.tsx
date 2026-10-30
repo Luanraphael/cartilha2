@@ -57,6 +57,15 @@ const SHOWCASE = [
   { title: "Datas duplas, afiliados e vídeos", img: "veja-09-datas-duplas-videos.png" },
 ];
 
+// Prints reais de conversas com alunos (celular com fundo transparente), mostrados nos slides "Depoimentos".
+const TESTIMONIALS = [
+  { title: "aluno com 3 vendas em um único dia", img: "depoimento-01.png" },
+  { title: "primeira venda de uma aluna", img: "depoimento-02.png" },
+  { title: "aluna comemorando as vendas", img: "depoimento-03.png" },
+  { title: "aluna mostrando as notificações de venda", img: "depoimento-04.png" },
+  { title: "aluna contando a sua primeira venda", img: "depoimento-05.png" },
+];
+
 // Capas das lições, mostradas nos slides "Módulos".
 const MODULES = [
   { title: "Lição 01: Antes de começar", img: "modulo-01-antes-de-comecar.png" },
@@ -461,6 +470,31 @@ export default function ShopeePage() {
               </div>
             ))}
           </Container>
+        </LightSection>
+
+        {/* 3b · Depoimentos */}
+        <LightSection className="pt-0">
+          <Container>
+            <h2 className={`${display} sp-proof-title text-center sp-title--dark`}>
+              Eles já deram o primeiro passo e começaram a fazer suas{" "}
+              <Mark on="light">primeiras vendas na Shopee</Mark>
+            </h2>
+            <p className="mt-6 text-center text-lg font-medium leading-relaxed text-sp-ink-soft">
+              Mensagens reais de quem seguiu a Cartilha Prática passo a passo e viu as primeiras notificações de venda
+              chegarem no celular.
+            </p>
+            <p className="mt-3 text-center text-lg font-bold text-sp-ink-soft">Arraste para o lado →</p>
+          </Container>
+          <div className="mx-auto mt-8 w-full max-w-[600px] px-1.5 sm:px-10">
+            <ShowcaseSlider
+              slides={TESTIMONIALS}
+              imgBase={IMG}
+              altPrefix="Depoimento"
+              width={1086}
+              height={1448}
+              framed={false}
+            />
+          </div>
         </LightSection>
 
         {/* 4 · Slides + O que vem + 5 · Data + 6 · Bônus */}

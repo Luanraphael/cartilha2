@@ -327,6 +327,15 @@ img {
 .sp-title--dark { color: var(--sp-ink); }
 .sp-title--light { color: var(--sp-white); }
 
+/* Headline dos depoimentos: maior que as demais, para a prova social pesar. */
+.sp-proof-title {
+  font-size: clamp(2.25rem, 9.5vw, 3.75rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
 /*
  * Grifo Shopee: faixa sólida integrada à tipografia, letras pretas, com um
  * "carimbo" preto deslocado 0.075em para baixo/direita (o recorte gráfico).
