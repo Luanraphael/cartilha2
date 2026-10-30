@@ -195,6 +195,102 @@ img {
   text-align: center;
   box-shadow: 5px 5px 0 var(--sp-ink);
 }
+/*
+ * "Como funciona em 3 passos": trilha vertical. Cada número é um selo laranja
+ * com o carimbo preto dos grifos; uma linha tracejada liga um selo ao próximo.
+ * O passo 3 (o objetivo) vira um card laranja para fechar a trilha.
+ */
+.sp-steps {
+  --st-num: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sp-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--st-num) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.sp-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--st-num) / 2 - 1.5px);
+  top: calc(var(--st-num) + 10px);
+  bottom: -22px;
+  border-left: 3px dashed var(--sp-500);
+}
+.sp-step-num {
+  display: inline-flex;
+  height: var(--st-num);
+  width: var(--st-num);
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid var(--sp-ink);
+  border-radius: 14px;
+  background: var(--sp-500);
+  color: var(--sp-ink);
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 4px 4px 0 var(--sp-ink);
+}
+.sp-step-card {
+  border: 2.5px solid var(--sp-ink);
+  border-radius: 20px;
+  background: var(--sp-white);
+  padding: 18px 18px 20px;
+  box-shadow: 6px 6px 0 var(--sp-ink);
+}
+.sp-step-icon {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--sp-cream);
+  color: var(--sp-600);
+}
+.sp-step-text {
+  margin: 12px 0 0;
+  color: var(--sp-ink-soft);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.sp-step-text strong {
+  color: var(--sp-ink);
+  font-weight: 800;
+}
+.sp-step--goal .sp-step-num {
+  background: var(--sp-ink);
+  color: var(--sp-white);
+  box-shadow: 4px 4px 0 var(--sp-500);
+}
+.sp-step--goal .sp-step-card {
+  background: var(--sp-500);
+}
+.sp-step--goal .sp-step-icon {
+  background: var(--sp-white);
+  color: var(--sp-500);
+}
+.sp-step--goal .sp-step-text,
+.sp-step--goal .sp-step-text strong {
+  color: var(--sp-white);
+}
+@media (min-width: 640px) {
+  .sp-steps { --st-num: 64px; gap: 32px; }
+  .sp-step { gap: 20px; }
+  .sp-step-num { font-size: 2.125rem; border-radius: 16px; }
+  .sp-step-card { padding: 22px 26px 24px; }
+  .sp-step-text { font-size: 1.1875rem; }
+}
+
 /* Why: headline mais longa, corte mais baixo. */
 .sp-slab--why {
   --sp-w: 205px;

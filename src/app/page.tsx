@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import ShowcaseSlider from "./showcase-slider";
-import { Check, ChevronsDown, Gift, Minus, Plus, ShieldCheck, X } from "lucide-react";
+import { BookOpenCheck, Check, ChevronsDown, Gift, Minus, Plus, Send, ShieldCheck, TrendingUp, X } from "lucide-react";
 
 const IMG = "/assets";
 const CHECKOUT_PREMIUM = "https://pay.cakto.com.br/4gwnhop_1252585";
@@ -619,10 +619,57 @@ export default function ShopeePage() {
           </Container>
         </ShopeeSlab>
 
-        {/* 9 · Oferta */}
+        {/* 9 · Como funciona + Oferta */}
         <LightSection id="offer" className="scroll-mt-20">
           <Container>
-            <SectionTitle>TEMOS ALGO ESPECIAL PARA VOCÊ</SectionTitle>
+            <SectionTitle>
+              Como funciona em{" "}
+              <span className="whitespace-nowrap">
+                <Mark on="light">3 Passos:</Mark>
+              </span>
+            </SectionTitle>
+
+            <ol className="sp-steps mt-12">
+              <li className="sp-step">
+                <span className={`${display} sp-step-num`}>1</span>
+                <div className="sp-step-card">
+                  <span className="sp-step-icon">
+                    <Send className="h-5 w-5" strokeWidth={2.5} />
+                  </span>
+                  <p className="sp-step-text">
+                    Você recebe o link da Pasta dos Materiais em PDF <strong>diretamente no seu E-mail e Whatsapp</strong>
+                  </p>
+                </div>
+              </li>
+              <li className="sp-step">
+                <span className={`${display} sp-step-num`}>2</span>
+                <div className="sp-step-card">
+                  <span className="sp-step-icon">
+                    <BookOpenCheck className="h-5 w-5" strokeWidth={2.5} />
+                  </span>
+                  <p className="sp-step-text">
+                    Segue à risca todo o nosso Passo a passo dentro da Cartilha tendo acesso às{" "}
+                    <strong>Estratégias usadas pelos Top vendedores</strong> e{" "}
+                    <strong>Produtos mais vendidos atualizados semanalmente</strong>
+                  </p>
+                </div>
+              </li>
+              <li className="sp-step sp-step--goal">
+                <span className={`${display} sp-step-num`}>3</span>
+                <div className="sp-step-card">
+                  <span className="sp-step-icon">
+                    <TrendingUp className="h-5 w-5" strokeWidth={2.5} />
+                  </span>
+                  <p className="sp-step-text">
+                    Para de pular de galho em galho, faz as suas <strong>primeiras vendas</strong> e começa a se
+                    consolidar no Maior mercado varejista do Brasil com{" "}
+                    <strong>mais de 90 Milhões de Usuários ativos todos os meses!</strong>
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <SectionTitle className="mt-20">TEMOS ALGO ESPECIAL PARA VOCÊ</SectionTitle>
             <div className="mt-8 flex justify-center">
               <IconOrb>
                 <ChevronsDown className="h-8 w-8" strokeWidth={3} />
