@@ -195,11 +195,6 @@ img {
   text-align: center;
   box-shadow: 5px 5px 0 var(--sp-ink);
 }
-/* Why: headline mais longa, corte mais baixo. */
-.sp-slab--why {
-  --sp-w: 205px;
-  --sp-o: calc(215px + (100vw - 32px) * 0.92);
-}
 /* Garantia: seção curta; o corte passa atrás do selo verde, headline já no laranja. */
 .sp-slab--guarantee {
   --sp-w: 40px;
@@ -216,10 +211,6 @@ img {
   .sp-slab--hero {
     --sp-w: 395px;
     --sp-o: calc(395px + (min(100vw, 680px) - 48px) * 0.92);
-  }
-  .sp-slab--why {
-    --sp-w: 285px;
-    --sp-o: calc(290px + (min(100vw, 680px) - 48px) * 0.92);
   }
   .sp-slab--offer {
     --sp-w: 160px;

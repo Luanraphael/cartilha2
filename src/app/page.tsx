@@ -101,23 +101,6 @@ const BONUSES = [
   },
 ];
 
-
-const WHY = [
-  "Um caminho organizado do zero à primeira venda, para você saber exatamente o que fazer em cada etapa, sem depender de informações soltas.",
-  "Telas e funcionalidades da Shopee ilustradas, para o que você vê na página ser o mesmo que você vê no seu celular ou computador.",
-  "Exemplos práticos e cálculos prontos, para você entender quanto cobrar e quanto realmente sobra em cada venda.",
-  "Explicações curtas, simples e diretas, sem vídeos longos para assistir e sem teoria que você nunca vai usar.",
-  "Atividades e checklists ao final das lições, para você aplicar enquanto aprende e avançar com segurança até a primeira venda.",
-];
-
-const FOR_WHOM = [
-  "Quem quer começar a vender na Shopee, mas não sabe por onde começar.",
-  "Quem quer uma renda extra vendendo pela internet, mesmo sem experiência.",
-  "Quem já tentou vender, mas se perdeu entre tarifas, anúncios e envios.",
-  "Quem tem dúvida sobre quais produtos vender e onde encontrar fornecedores.",
-  "Quem aprende melhor vendo o passo a passo do que assistindo aulas longas.",
-];
-
 type OfferItem = { text: string; included: boolean };
 
 const BONUS_TITLES = [FIRST_BONUS.title, ...BONUSES.map((b) => b.title)];
@@ -209,7 +192,7 @@ const FAQ: { q: string; a: ReactNode }[] = [
 /* Peças de clay                                                       */
 /* ------------------------------------------------------------------ */
 
-type SlabVariant = "hero" | "inside" | "why" | "guarantee";
+type SlabVariant = "hero" | "inside" | "guarantee";
 
 /** Seção de identidade Shopee: topo branco que se abre em laranja (composição própria por variante). */
 function ShopeeSlab({
@@ -551,29 +534,6 @@ export default function ShopeePage() {
 
             <div className="mt-12 flex justify-center">
               <CtaButton href="#offer">Quero a cartilha</CtaButton>
-            </div>
-          </Container>
-        </ShopeeSlab>
-
-        {/* 8 · Por quê? + Para quem? */}
-        <ShopeeSlab variant="why">
-          <Container>
-            <SectionTitle tone="dark">
-              Por que a <Mark on="light">{MAIN_PRODUCT}</Mark> vai ser o seu passo a passo até a primeira venda
-            </SectionTitle>
-
-            <MainMockup className="mt-10" />
-
-            <div className="clay-red-card mt-12 rounded-[32px] p-6 sm:p-8">
-              <CheckList items={WHY} onRed />
-            </div>
-
-            <SectionTitle tone="light" className="mt-14">
-              Para quem é a cartilha?
-            </SectionTitle>
-
-            <div className="clay-red-card mt-10 rounded-[32px] p-6 sm:p-8">
-              <CheckList items={FOR_WHOM} onRed />
             </div>
           </Container>
         </ShopeeSlab>
