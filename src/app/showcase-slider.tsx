@@ -11,17 +11,10 @@ export default function ShowcaseSlider({
   slides,
   imgBase,
   altPrefix,
-  width = 1054,
-  height = 1492,
-  framed = true,
 }: {
   slides: Slide[];
   imgBase: string;
   altPrefix: string;
-  width?: number;
-  height?: number;
-  /** false → imagem com fundo transparente, sem cartão branco nem sombra. */
-  framed?: boolean;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
@@ -47,13 +40,11 @@ export default function ShowcaseSlider({
             <Image
               src={`${imgBase}/${s.img}`}
               alt={`${altPrefix}: ${s.title}`}
-              width={width}
-              height={height}
+              width={1054}
+              height={1492}
               sizes="(min-width: 640px) 500px, 100vw"
               loading="eager"
-              className={
-                framed ? "h-auto w-full rounded-[16px] bg-white shadow-[0_8px_18px_rgba(120,30,5,0.22)]" : "h-auto w-full"
-              }
+              className="h-auto w-full rounded-[16px] bg-white shadow-[0_8px_18px_rgba(120,30,5,0.22)]"
             />
             <span className="sr-only">
               Página {i + 1} de {slides.length}

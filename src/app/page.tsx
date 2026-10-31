@@ -58,16 +58,6 @@ const SHOWCASE = [
   { title: "Datas duplas, afiliados e vídeos", img: "veja-09-datas-duplas-videos.png" },
 ];
 
-// Prints reais de conversas com alunos (celular com fundo transparente), mostrados nos slides "Depoimentos".
-const TESTIMONIALS = [
-  { title: "aluno com 3 vendas em um único dia", img: "depoimento-01.png" },
-  { title: "aluno com 5 vendas que trouxe a esposa para vender junto", img: "depoimento-06.png" },
-  { title: "primeira venda de uma aluna", img: "depoimento-07.png" },
-  { title: "aluna comemorando as vendas", img: "depoimento-03.png" },
-  { title: "aluna mostrando as notificações de venda", img: "depoimento-04.png" },
-  { title: "aluna contando a sua primeira venda", img: "depoimento-05.png" },
-];
-
 // Capas das lições, mostradas nos slides "Módulos".
 const MODULES = [
   { title: "Lição 01: Antes de começar", img: "modulo-01-antes-de-comecar.png" },
@@ -588,72 +578,9 @@ export default function ShopeePage() {
           </Container>
         </ShopeeSlab>
 
-        {/* 9 · Como funciona + Depoimentos + Oferta */}
+        {/* 9 · Oferta */}
         <LightSection id="offer" className="scroll-mt-20">
           <Container>
-            <SectionTitle>
-              Como funciona em{" "}
-              <span className="whitespace-nowrap">
-                <Mark on="light">3 Passos:</Mark>
-              </span>
-            </SectionTitle>
-
-            <ol className="sp-steps">
-              <li className="sp-step">
-                <span className={`${display} sp-step-num`}>1</span>
-                <div className="sp-step-card">
-                  <p className="sp-step-text">
-                    Você recebe o link da Pasta dos Materiais em PDF <strong>diretamente no seu E-mail e Whatsapp</strong>
-                  </p>
-                </div>
-              </li>
-              <li className="sp-step">
-                <span className={`${display} sp-step-num`}>2</span>
-                <div className="sp-step-card">
-                  <p className="sp-step-text">
-                    Segue à risca todo o nosso Passo a passo dentro da Cartilha tendo acesso às{" "}
-                    <strong>Estratégias usadas pelos Top vendedores</strong> e{" "}
-                    <strong>Produtos mais vendidos atualizados semanalmente</strong>
-                  </p>
-                </div>
-              </li>
-              <li className="sp-step sp-step--goal">
-                <span className={`${display} sp-step-num`}>3</span>
-                <div className="sp-step-card">
-                  <p className="sp-step-text">
-                    Para de pular de galho em galho, faz as suas <strong>primeiras vendas</strong> e começa a se
-                    consolidar no Maior mercado varejista do Brasil com{" "}
-                    <strong>mais de 90 Milhões de Usuários ativos todos os meses!</strong>
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </Container>
-
-          {/* Depoimentos */}
-          <Container className="mt-20">
-            <h2 className={`${display} sp-proof-title text-center sp-title--dark`}>
-              Eles já deram o primeiro passo e começaram a fazer suas{" "}
-              <Mark on="light">primeiras vendas na Shopee</Mark>
-            </h2>
-            <p className="mt-6 text-center text-lg font-medium leading-relaxed text-sp-ink-soft">
-              Mensagens reais de quem seguiu a Cartilha Prática passo a passo e viu as primeiras notificações de venda
-              chegarem no celular.
-            </p>
-            <p className="mt-3 text-center text-lg font-bold text-sp-ink-soft">Arraste para o lado →</p>
-          </Container>
-          <div className="mx-auto mt-8 w-full max-w-[600px] px-1.5 sm:px-10">
-            <ShowcaseSlider
-              slides={TESTIMONIALS}
-              imgBase={IMG}
-              altPrefix="Depoimento"
-              width={1086}
-              height={1448}
-              framed={false}
-            />
-          </div>
-
-          <Container className="mt-20">
             <SectionTitle>TEMOS ALGO ESPECIAL PARA VOCÊ</SectionTitle>
             <div className="mt-8 flex justify-center">
               <IconOrb>
